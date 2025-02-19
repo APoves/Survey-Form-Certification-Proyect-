@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Encuesta sobre lenguajes de programación</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+  <body>
+
+    <h1 id="title">Encuesta sobre lenguajes de programación</h1>  
+    
+    <p id="description">¡Gracias por ayudarme a mejorar!</p>
+    <form id="survey-form" >
+
+      <div class="inputs">
+        <div class="inputgr">
+          <label for="name" id="name-label">Nombre: </label>
+          <input id="name" type="text" required placeholder="Introduce tu nombre">
+        </div>
+        <div class="inputgr">
+          <label for="email" id="email-label">Email: </label>
+          <input id="email" type="email" required placeholder="Introduce tu email">
+        </div>
+        <div class="inputgr">
+          <label for="number" id="number-label">Edad (opcional): </label>
+          <input id="number" type="number" min="14" max="100" placeholder="Tu edad">
+        </div>
+      </div>
+      <br>
+      <fieldset>
+        <legend>Sexo</legend>
+          <label for="femenino"><input id="femenino" value="femenino" type="radio" name="sexo" class="inline" checked />Femenino</label>
+          <label for="masculino"><input id="masculino" value="masculino" type="radio" name="sexo" class="inline"/>Masculino</label>
+          <label for="no-binario"><input id="no-binario" value="no binario" type="radio" name="sexo" class="inline"/>No binario</label>
+          <label for="otro"><input id="otro" value="otro" type="radio" name="sexo" class="inline"/>Otro</label>
+      </fieldset>
+      <br>
+
+        <legend>¿Cúal es tu ocupación actual?</legend>
+        <select id="dropdown">
+          <option> Estudiante</option>
+          <option> Empresario/a</option>
+          <option> Funcionario/a</option>
+          <option> Trabajador/a por cuenta ajena</option>
+          <option> Prefiero no contestar</option>
+          <option> Otro</option>
+        </select>
+      <br>
+      <br>
+
+        <legend>¿Con qué lenguaje(s) de programación trabajas actualmente?</legend>
+
+      <label for="javascript">
+        <input id="javascript" type="checkbox" name="lenguaje" value="javascript" checked> Javascript
+      </label>
+      <label for="python">
+        <input id="python" type="checkbox" name="lenguaje" value="python"> Python
+      </label>
+      <label for="c">
+        <input id="c" type="checkbox" name="lenguaje" value="c"> C
+      </label>
+      <label for="c++">
+        <input id="c++" type="checkbox" name="lenguaje" value="c++"> C++
+      </label>
+      <label for="c#">
+        <input id="c#" type="checkbox" name="lenguaje" value="c#"> C#
+      </label>
+      <label for="java">
+        <input id="java" type="checkbox" name="lenguaje" value="java"> Java
+      </label>
+      <label for="php">
+        <input id="php" type="checkbox" name="lenguaje" value="php"> PHP
+      </label>
+      <label for="kotlin">
+        <input id="kotlin" type="checkbox" name="lenguaje" value="kotlin"> Kotlin
+      </label>
+      <label for="swift">
+        <input id="swift" type="checkbox" name="lenguaje" value="swift"> Swift
+      </label>
+      <label for="go">
+        <input id="go" type="checkbox" name="lenguaje" value="go"> Go
+      </label>
+      <label for="otro-lenguaje">
+        <input id="otro-lenguaje" type="checkbox" name="lenguaje" value="otro"> Otro
+      </label>
+      <br>
+
+      <label for="frameworks" id="frameworks-label">Respecto a los lenguajes marcados anteriormente, ¿qué frameworks recomendarías?</label>
+      <textarea id="frameworks" placeholder="Mis frameworks favoritos son..."></textarea>
+      </label>
+
+      <input id="submit" type="submit" value="Submit" />
+
+  </form>
+  </body>
+</html>
